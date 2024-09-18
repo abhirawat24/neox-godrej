@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const LoginModal = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
@@ -36,6 +37,12 @@ const LoginModal = ({ isOpen, onClose }) => {
                 >
                     Close
                 </button>
+                <div className='flex justify-center gap-10'>
+                    <p className='text-blue-600'>Forgot Password?</p>
+                    <NavLink to={'/register'}>   
+                    <p className='text-blue-600'>Sign Up?</p>
+                        </NavLink> 
+                </div>
             </div>
         </div>
     );

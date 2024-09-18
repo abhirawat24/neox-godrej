@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-
+import logo from "../assets/"
 const Header = () => {
     // State to handle login/logout
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     // Toggle login/logout state
     const handleAuth = () => {
-        setIsLoggedIn(!isLoggedIn);
+        setIsLoggedIn(!isLoggedIn); 
     };
 
     return (
         <header className="bg-gray-800 text-white flex justify-between items-center p-4">
             <div className="navbar-logo">
                 {/* Replace the src with the path to your logo */}
-                <img src="/path-to-logo/logo.png" alt="Logo" className="h-12 cursor-pointer" />
+                <img src="./assets/Godrej_Logo.svg" alt="Logo" className="h-12 cursor-pointer bg-black hidden" />
             </div>
             <div className="navbar-buttons">
                 {isLoggedIn ? (

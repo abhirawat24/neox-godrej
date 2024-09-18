@@ -1,5 +1,6 @@
 // Register.js
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Register = () => {
     return (
@@ -39,7 +40,7 @@ const Register = () => {
                     </button>
                 </form>
                 <p className="mt-6 text-center">
-                    Already have an account? <a href="/login" className="text-blue-500">Login</a>
+                    Already have an account? <NavLink to="/login" className="text-blue-500">Login</NavLink>
                 </p>
             </div>
         </div>
