@@ -1,1 +1,1 @@
-# neox-godrej
+# neox
